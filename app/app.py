@@ -15,5 +15,13 @@ app = Flask(__name__)
 def hello():
     return "{}".format(request.headers)
 
+@app.route('/hello/json')
+def hello():
+    res = {}
+    res['Hello'] = "json"
+
+    return res
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80)
