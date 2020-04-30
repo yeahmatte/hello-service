@@ -11,3 +11,4 @@ services:
       - 5002:80
     volumes:
       - "./app:/app"
+    restart: unless-stopped
