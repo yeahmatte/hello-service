@@ -16,7 +16,7 @@ def hello():
     return "{}".format(request.headers)
 
 @app.route('/hello/json')
-def hello():
+def helloJSON():
     res = {}
     res['Hello'] = "json"
 
